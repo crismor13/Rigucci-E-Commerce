@@ -1,10 +1,9 @@
 body {
-    
     margin: 0;
 }
 
 header {
-    padding: 0 185px;
+    padding: 0 12.84vw;
     margin: 0;
     background: #000;
     color: antiquewhite;
@@ -12,32 +11,13 @@ header {
     align-items: center;
 }
 
-.hero {
-    padding: 0;
-    position: relative;
-    border: 3px solid greenyellow;
-}
-
-.hero__title {
-    position: absolute;
-    bottom: 355px;
-    left: 188px;
-    font-size: 48px;
-    font-family: 'Playfair Display';
-    border: 2px solid red;
-    margin: 0;
-}
-
-.hero__img {
-    border: 2px solid blue
-}
-
 .logo {
     margin: 0;
     padding: 27px 0px;
     /* padding-left: 185px; */
     font-family: 'Lexend Exa';
-    font-size: 24px;
+    /* font-size: 1.66vw; */
+    font-size: clamp(16px, 1.66vw, 24px);
 }
 
 nav {
@@ -48,4 +28,82 @@ nav a {
     color: antiquewhite;
     text-decoration: none;
     font-family: 'Roboto';
+    font-size: clamp(14px, 1.11vw, 16px);
+    padding: 0 0.5vw;
 }
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icon {
+    width: clamp(20px, 2vw, 25px);
+    /* color: red; */
+}
+
+select {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    color: antiquewhite;
+    font-family: 'Roboto';
+    font-size: clamp(14px, 1.11vw, 16px);
+}
+
+select option {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+.hero {
+    padding: 0;
+    position: relative;
+    border: 3px solid greenyellow;
+}
+
+.hero__title-btn {
+    position: absolute;
+    left: 13.06vw;
+    bottom: 40%;
+}
+
+.hero__title {
+
+    
+    font-size: clamp(30px, 4vw, 48px);
+    font-family: 'Playfair Display';
+    border: 2px solid red;
+    margin: 0;
+}
+
+.hero__btn {
+
+    background-color: transparent;
+    padding: 0.5rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 16px;
+    font-family: 'Roboto';
+    /* font-size: 1.11vw; */
+    font-size: clamp(12px, 1.11vw, 16px);
+    margin-top: 8px;
+}
+
+.hero__img {
+    border: 2px solid blue;
+    vertical-align: top;
+}
+
+
+.hero__btn:hover {
+    background-color: rgb(0, 0, 0);
+    color:antiquewhite;
+}
+
+/* .svg-icon {
+    width: 50px;
+} */
+
