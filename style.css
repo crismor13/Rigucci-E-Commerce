@@ -1,0 +1,51 @@
+body {
+    
+    margin: 0;
+}
+
+header {
+    padding: 0 185px;
+    margin: 0;
+    background: #000;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+}
+
+.hero {
+    padding: 0;
+    position: relative;
+    border: 3px solid greenyellow;
+}
+
+.hero__title {
+    position: absolute;
+    bottom: 355px;
+    left: 188px;
+    font-size: 48px;
+    font-family: 'Playfair Display';
+    border: 2px solid red;
+    margin: 0;
+}
+
+.hero__img {
+    border: 2px solid blue
+}
+
+.logo {
+    margin: 0;
+    padding: 27px 0px;
+    /* padding-left: 185px; */
+    font-family: 'Lexend Exa';
+    font-size: 24px;
+}
+
+nav {
+    margin: 0 auto;
+}
+
+nav a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
