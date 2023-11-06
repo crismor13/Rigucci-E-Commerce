@@ -133,6 +133,7 @@ main h1 {
     text-align: center;
     font-family: 'Playfair display';
     font-size: clamp(18px, 1.94vw, 28px);
+    margin-bottom: 39px;
 }
 
 .main-menu {
@@ -145,6 +146,7 @@ main h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .main-menu .container div {
@@ -152,6 +154,7 @@ main h1 {
     /* justify-content: space-between; */
     align-items: center;
     margin: 10px 0;
+    gap: 0.6vw;
 }
 
 .main-menu hr {
@@ -161,9 +164,27 @@ main h1 {
     transform: translate(0, -10px);
 }
 
-.main-menu p {
-    margin: 10px 0;
+.clothes-wrapper {
+    margin-top: 7vw;
 }
+
+.clothes-wrapper .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 3.47vw 0;
+}
+
+.row .product-card {
+    width: 22.22vw;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+/* .main-menu p {
+    margin: 10px 0;
+} */
 
 .mens-clothing {
     /* width: 46.29%; */
