@@ -1,3 +1,17 @@
+:root {
+    --white: rgb(224, 227, 228);
+}
+
+.logo {
+    color: var(--white);
+    margin: 0;
+    padding: 27px 0px;
+    /* padding-left: 185px; */
+    font-family: 'Lexend Exa';
+    /* font-size: 1.66vw; */
+    font-size: clamp(16px, 1.66vw, 24px);
+}
+
 body {
     margin: 0;
     font-family: 'Roboto';
@@ -7,7 +21,7 @@ header {
     padding: 0 12.84vw;
     margin: 0;
     background: #000;
-    color: antiquewhite;
+    color: var(--white);
     display: flex;
     align-items: center;
 }
@@ -21,16 +35,26 @@ header {
     font-size: clamp(16px, 1.66vw, 24px);
 }
 
+
+.logo  a:visited,  a:link, a:hover, a:active {
+    text-decoration: none;
+    color: var(--white);
+}
+
 nav {
     margin: 0 auto;
 }
 
 nav a {
-    color: antiquewhite;
+    color: var(--white);
     text-decoration: none;
     font-family: 'Roboto';
     font-size: clamp(14px, 1.11vw, 16px);
     padding: 0 0.5vw;
+}
+
+.navigation-links a:nth-child(3) {
+    text-decoration: underline !important;
 }
 
 .icons {
@@ -48,7 +72,7 @@ select {
     margin: 0;
     background-color: transparent;
     border: none;
-    color: antiquewhite;
+    color: var(--white);
     font-family: 'Roboto';
     font-size: clamp(14px, 1.11vw, 16px);
 }
@@ -114,7 +138,7 @@ select option {
 
 .hero__btn:hover {
     background-color: rgb(0, 0, 0);
-    color:antiquewhite;
+    color:var(--white);
 }
 
 /* 

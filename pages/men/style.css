@@ -1,11 +1,25 @@
+body {
+    margin: 0;
+    font-family: 'Roboto';
+}
+
 :root {
     --white: rgb(224, 227, 228);
 }
 
-
-body {
+.logo {
+    color: var(--white);
     margin: 0;
-    font-family: 'Roboto';
+    padding: 27px 0px;
+    /* padding-left: 185px; */
+    font-family: 'Lexend Exa';
+    /* font-size: 1.66vw; */
+    font-size: clamp(16px, 1.66vw, 24px);
+}
+
+.logo  a:visited,  a:link, a:hover, a:active {
+    text-decoration: none;
+    color: var(--white);
 }
 
 header {
@@ -18,7 +32,6 @@ header {
 }
 
 .logo {
-    color: var(--white);
     margin: 0;
     padding: 27px 0px;
     /* padding-left: 185px; */
@@ -44,7 +57,7 @@ nav a {
     padding: 0 0.5vw;
 }
 
-.navigation-links a:nth-child(1) {
+.navigation-links a:nth-child(2) {
     text-decoration: underline !important;
 }
 
@@ -110,7 +123,7 @@ select option {
 }
 
 .main__btn {
-    color: var(--white);
+    color: #fff;
     background-color: rgb(0, 0, 0);
     padding: 0.5rem;
     border: none;
@@ -141,7 +154,65 @@ main
 main {
     width: 73.95%;
     margin: 0 auto;
+    padding: 70px 0;
 }
+
+main h1 {
+    text-align: center;
+    font-family: 'Playfair display';
+    font-size: clamp(18px, 1.94vw, 28px);
+    margin-bottom: 39px;
+}
+
+.main-menu {
+    /* display: flex; */
+    background: #8d8d8d;
+    /* position: absolute; */
+}
+
+.main-menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.main-menu .container div {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 10px 0;
+    gap: 0.6vw;
+}
+
+.main-menu hr {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transform: translate(0, -10px);
+}
+
+.clothes-wrapper {
+    margin-top: 7vw;
+}
+
+.clothes-wrapper .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 3.47vw 0;
+}
+
+.row .product-card {
+    width: 22.22vw;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+/* .main-menu p {
+    margin: 10px 0;
+} */
 
 .mens-clothing {
     /* width: 46.29%; */
@@ -644,6 +715,7 @@ footer hr {
     padding: 0;
 }
 
+
 .mobile {
     display: none;
 }
@@ -779,6 +851,11 @@ footer hr {
     main {
         width: 90.69%;
         margin: 0 auto;
+    }
+
+    main h1 {
+        text-align: center;
+        
     }
 
     .womens-clothing img, .mens-clothing img {
