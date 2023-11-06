@@ -126,6 +126,43 @@ main
 main {
     width: 73.95%;
     margin: 0 auto;
+    padding: 70px 0;
+}
+
+main h1 {
+    text-align: center;
+    font-family: 'Playfair display';
+    font-size: clamp(18px, 1.94vw, 28px);
+}
+
+.main-menu {
+    /* display: flex; */
+    background: #8d8d8d;
+    /* position: absolute; */
+}
+
+.main-menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu .container div {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 10px 0;
+}
+
+.main-menu hr {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transform: translate(0, -10px);
+}
+
+.main-menu p {
+    margin: 10px 0;
 }
 
 .mens-clothing {
@@ -765,6 +802,11 @@ footer hr {
     main {
         width: 90.69%;
         margin: 0 auto;
+    }
+
+    main h1 {
+        text-align: center;
+        
     }
 
     .womens-clothing img, .mens-clothing img {
