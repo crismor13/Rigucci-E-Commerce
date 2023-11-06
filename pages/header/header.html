@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Lexend+Exa:wght@600&family=Playfair+Display:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p class="logo">RIGUCCI</p>
+        <nav class="navigation-links desktop">
+            <a href="#">Home</a>
+            <a href="#">Men</a>
+            <a href="pages/women/women.html">Women</a>
+        </nav>
+        <div class="icons desktop">
+
+            <img class="navbar-icon" src="../../assets/search-icon.svg" alt="">
+            <img class="navbar-icon" src="../../assets/user-icon.svg" alt="">
+            <img class="navbar-icon" src="../../assets/cart.svg" alt="">
+
+            <select name="language" id="language"> 
+                <option value="English">Eng</option> 
+                <option value="Espaniol">Esp</option> 
+            </select>
+        </div>
+        <div class="burguer-icon mobile">
+          
+          <label for="menu-toggle" id="menu-icon">
+            <img src="../../assets/burguer-menu.svg" alt="">
+          </label>
+          <input type="checkbox" id="menu-toggle">
+          <div id="menu-wrapper">
+              <ul id="menu">
+                  <li><a href="#">Opción 1</a><br></li>
+                  <li><a href="#">Opción 2</a><br></li>
+                  <li><a href="#">Opción 3</a><br><br><br><br><br><br></li>
+                  
+                  <li class="li-container">
+                    <div class="">
+                      <a href="#">
+                        <img class="navbar-icon" src="../../assets/search-icon.svg"     alt="">
+                      </a>
+                      <a href="#">
+                        Search
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="li-container">
+                    <div>
+                      <a href="#">
+                        <img class="navbar-icon" src="../../assets/user-icon.svg" alt="">
+                      </a>
+                      <a href="#">
+                        Profile
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="li-container">
+                    <div class="">
+                      <a href="#">
+                        <img class="navbar-icon" src="../../assets/user-icon.svg" alt="">
+                      </a>
+                      <a href="#">
+                        Profile
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="li-container">
+                    <div>
+                      <select name="language" id="language"> 
+                        <option value="English">Eng</option> 
+                        <option value="Espaniol">Esp</option> 
+                      </select>
+                    </div>
+                  </li>
+                  
+
+                    
+                  
+              </ul>
+          </div>
+        </div>
+    </header>
+</html>
