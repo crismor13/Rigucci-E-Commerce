@@ -8,18 +8,18 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@600&family=Playfair+Display:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Lexend+Exa:wght@600&family=Playfair+Display:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
     
 </head>
 <body>
     <header>
         <p class="logo">RIGUCCI</p>
-        <nav class="navigation-links">
+        <nav class="navigation-links desktop">
             <a href="#">Home</a>
             <a href="#">Men</a>
             <a href="#">Women</a>
         </nav>
-        <div class="icons">
+        <div class="icons desktop">
             <img class="navbar-icon" src="assets/search-icon.svg" alt="">
             <img class="navbar-icon" src="assets/user-icon.svg" alt="">
             <img class="navbar-icon" src="assets/cart.svg" alt="">
@@ -29,17 +29,349 @@
                 <option value="Espaniol">Esp</option> 
             </select>
         </div>
+        <div class="burguer-icon mobile">
+          
+          <label for="menu-toggle" id="menu-icon">
+            <img src="assets/burguer-menu.svg" alt="">
+          </label>
+          <input type="checkbox" id="menu-toggle">
+          <div id="menu-wrapper">
+              <ul id="menu">
+                  <li><a href="#">Opción 1</a></li>
+                  <li><a href="#">Opción 2</a></li>
+                  <li><a href="#">Opción 3</a></li>
+              </ul>
+          </div>
+        </div>
     </header>
     <div class="hero">
-        <img src="assets/hero.jpg" alt="" width="100%" class="hero__img">
-
+        <img src="assets/hero.jpg" alt="" width="100%" class="hero__img desktop">
+        <img src="assets/hero-mobile.jpg" alt="" width="100%" class="mobile">
         <div class="hero__title-btn">
             <p class="hero__title">
                 Winter 2023
             </p>
             <button class="hero__btn">Explore collection</button>
         </div>
-
     </div>
+
+    <!-- desktop slider -->
+    <div class='demo-container desktop'>
+      <div class='carousel'>
+        <input checked='checked' class='activator' id='carousel-slide-activator-1' name='carousel' type='radio'>
+        <input class='activator' id='carousel-slide-activator-2' name='carousel' type='radio'>
+        <input class='activator' id='carousel-slide-activator-3' name='carousel' type='radio'>
+        <div class='controls'>
+          <label class='control control--forward' for='carousel-slide-activator-2'>&#8250;</label>
+        </div>
+        <div class='controls'>
+          <label class='control control--backward' for='carousel-slide-activator-1'>&#8249;</label>
+          <label class='control control--forward' for='carousel-slide-activator-3'>&#8250;</label>
+        </div>
+        <div class='controls'>
+          <label class='control control--backward' for='carousel-slide-activator-2'>&#8249;</label>
+        </div>
+        <div class='screen'>
+          <div class='track'>
+            <div class='item item--mobile-in-1 item--tablet-in-2 item--desktop-in-3'>
+              <div class='demo-content'>
+                <img src="assets/versaceBlazer1.webp" 
+                width="246px"
+                alt="">
+                <p>
+                  <span>Gianni Ribbon Mid Pumps</span><br>
+                  COP 4’000.000
+                </p>
+              </div>
+            </div>
+            <div class='item item--mobile-in-1 item--tablet-in-2 item--desktop-in-3'>
+              <div class='demo-content'>
+                <img src="assets/versaceZapatillas1.webp" 
+                width="246px"
+                alt="">
+                <p>
+                  <span>Gianni Ribbon Mid Pumps</span><br>
+                  COP 4’000.000
+                </p>
+              </div>
+            </div>
+            <div class='item item--mobile-in-1 item--tablet-in-2 item--desktop-in-3'>
+              <div class='demo-content'>
+                <img src="assets/versaceBolso1.webp" 
+                width="246px"
+                alt="">
+                <p>
+                  <span>Gianni Ribbon Mid Pumps</span><br>
+                  COP 4’000.000
+                </p>
+              </div>
+            </div>
+            <div class='item item--mobile-in-1 item--tablet-in-2 item--desktop-in-3'>
+              <div class='demo-content'>
+                <img src="assets/versaceZapatillas1.webp" 
+                width="246px"
+                alt="">
+                <p>
+                  <span>Gianni Ribbon Mid Pumps</span><br>
+                  COP 4’000.000
+                </p>
+              </div>
+            </div>
+            <div class='item item--mobile-in-1 item--tablet-in-2 item--desktop-in-3'>
+              <div class='demo-content'>
+                <img src="assets/versaceZapatillas1.webp" 
+                width="246px"
+                alt="">
+                <p>
+                  <span>Gianni Ribbon Mid Pumps</span><br>
+                  COP 4’000.000
+                </p>
+              </div>
+            </div>
+            <div class='item item--mobile-in-1 item--tablet-in-2 item--desktop-in-3'>
+              <div class='demo-content'>
+                <img src="assets/versaceZapatillas1.webp" 
+                width="246px"
+                alt="">
+                <p>
+                  <span>Gianni Ribbon Mid Pumps</span><br>
+                  COP 4’000.000
+                </p>
+              </div>
+            </div>
+            <div class='item item--mobile-in-1 item--tablet-in-2 item--desktop-in-3'>
+              <div class='demo-content'>
+                <img src="assets/versaceZapatillas1.webp" 
+                width="246px"
+                alt="">
+                <p>
+                  <span>Gianni Ribbon Mid Pumps</span><br>
+                  COP 4’000.000
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile-slider -->
+    <div class="slider-wrapper mobile">
+      <div class="slider">
+          <div class="frame">
+              <div class="product-info">
+                  <img src="assets/versaceBlazer1.webp" width="100%" alt="">
+                  <p>
+                      <span>Gianni Ribbon Mid Pumps</span><br>
+                      COP 4’000.000
+                  </p>
+              </div>
+          </div>
+          <div class="frame">
+              <div class="product-info">
+                  <img src="assets/versaceBlazer1.webp" width="100%" alt="">
+                  <p>
+                      <span>Gianni Ribbon Mid Pumps</span><br>
+                      COP 4’000.000
+                  </p>
+              </div>
+          </div>
+          <div class="frame">
+              <div class="product-info">
+                  <img src="assets/versaceBlazer1.webp" width="100%" alt="">
+                  <p>
+                      <span>Gianni Ribbon Mid Pumps</span><br>
+                      COP 4’000.000
+                  </p>
+              </div>
+          </div>
+          <div class="frame">
+              <div class="product-info">
+                  <img src="assets/versaceBlazer1.webp" width="100%" alt="">
+                  <p>
+                      <span>Gianni Ribbon Mid Pumps</span><br>
+                      COP 4’000.000
+                  </p>
+              </div>
+          </div>
+          <div class="frame">
+              <!-- <div class="product-info">
+                  <img src="assets/versaceBlazer1.webp" width="100%" alt="">
+                  <p>
+                      <span>Gianni Ribbon Mid Pumps</span><br>
+                      COP 4’000.000
+                  </p>
+              </div> -->
+          </div>
+      </div>
+      <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+      </div>
+  </div>
+
+    
+      
+    <!-- main section -->
+
+    <main>
+      
+      <section class="mens-clothing">
+        <img src="assets/mensClothing.jpg" alt="">
+        <p class="desktop">
+          <span>Men's clothing</span><br><br>
+          From tailored suits to high-end casual wear,<br>
+          our selection is designed for the modern gentleman
+          who values quality and refinement. <br>
+          <button class="main__btn">Shop now</button>
+        </p>
+      </section>
+      <section class="womens-clothing">
+        <p class="desktop">
+          <span>Women's clothing</span><br><br>
+          From evening gowns to elegant casual ensembles, 
+          our selection is designed for the sophisticated woman
+          seeking luxury and distinction. <br>
+          <button class="main__btn">Shop now</button>
+        </p>
+        <img src="assets/womensClothing.jpg" alt="">
+      </section>
+      <section class="newsletter">
+        <span>ENTER THE WORLD OF RIGUCCI</span> <br>
+        <p>
+          Stay up to date on events, collections and exclusive news 
+          <br>
+        </p>
+        <div class="wrapper">
+          <input id="user-email" name="email" type="email" placeholder="Enter your email address *">
+          <button type="submit">&#8594;</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__container">
+        <div class="col">
+          <p>
+            <span>Customer service and FAQ</span> <br>
+            FAQ <br>
+            Contact Us <br>
+            Size Guide <br>
+            Store Finder <br>
+          </p>
+        </div>
+        <div class="col">
+          <p>
+            <span>About Us</span> <br>
+            About Rigucci <br>
+            Sustainability <br>
+            Jobs & Career <br>
+          </p>
+        </div>
+        <div class="col">
+          <p>
+            <span>Legal</span> <br>
+            Terms of Use <br>
+            Terms and Conditions <br>
+            Privacy Policy <br>
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="copyright">
+        <span>Copyright ⓒ 2023 Rigucci. All rights reserved.</span>
+        <div class="social-media-icons">
+          <ul>
+            <li><a href=""><img src="assets/facebook.svg" alt=""></a></li>
+            <li><a href=""><img src="assets/ex.svg" alt=""></a></li>
+            <li><a href=""><img src="assets/insta.svg" alt=""></a></li>
+            <li><a href=""><img src="assets/tiktok.svg" alt=""></a></li>
+            <li><a href=""><img src="assets/pinterest.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>Customer service and FAQ</h4>
+                  <ul>
+                      <li><a href="">FAQ</a></li>
+                      <li><a href="">Contact Us</a></li>
+                      <li><a href="">Size Guide</a></li>
+                      <li><a href="">Store Finder</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>About us</h4>
+                  <ul>
+                      <li><a href="">About Rigucci</a></li>
+                      <li><a href="">Sustainability</a></li>
+                      <li><a href="">Jobs & Career</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Legal</h4>
+                  <ul>
+                      <li><a href="">Terms of Use</a></li>
+                      <li><a href="">Terms and Conditions</a></li>
+                      <li><a href="">Privacy Policy</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Copyright ⓒ 2023 Rigucci. All rights reserved.</h4>
+                  <ul>
+                      <li><a href=""><svg width="20" height="20" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_375_522)">
+                          <path d="M12.5044 0C5.60089 0 0.00439453 5.5965 0.00439453 12.5C0.00439453 18.362 4.04039 23.281 9.48489 24.632V16.32H6.90739V12.5H9.48489V10.854C9.48489 6.5995 11.4104 4.6275 15.5874 4.6275C16.3794 4.6275 17.7459 4.783 18.3049 4.938V8.4005C18.0099 8.3695 17.4974 8.354 16.8609 8.354C14.8114 8.354 14.0194 9.1305 14.0194 11.149V12.5H18.1024L17.4009 16.32H14.0194V24.9085C20.2089 24.161 25.0049 18.891 25.0049 12.5C25.0044 5.5965 19.4079 0 12.5044 0Z" fill="#9D9D9D"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_375_522">
+                          <rect width="25" height="25" fill="white" transform="translate(0.00439453)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                          </a></li>
+                      <li><a href=""><svg width="20" height="20" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.0807 1.98315H22.4542L15.0841 10.7576L23.7544 22.6977H16.9656L11.6484 15.4561L5.56434 22.6977H2.18883L10.0718 13.3124L1.75439 1.98315H8.7155L13.5218 8.60225L19.0807 1.98315ZM17.8967 20.5944H19.766L7.69979 3.976H5.69386L17.8967 20.5944Z" fill="#9D9D9D"/>
+                          </svg>
+                          </a></li>
+                      <li><a href=""><svg width="20" height="20" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_375_524)">
+                          <path d="M13.0044 2.25098C16.3442 2.25098 16.7397 2.26562 18.0532 2.32422C19.2739 2.37793 19.9331 2.58301 20.3726 2.75391C20.9536 2.97852 21.3735 3.25195 21.8081 3.68652C22.2476 4.12598 22.5161 4.54102 22.7407 5.12207C22.9116 5.56152 23.1167 6.22559 23.1704 7.44141C23.229 8.75977 23.2437 9.15527 23.2437 12.4902C23.2437 15.8301 23.229 16.2256 23.1704 17.5391C23.1167 18.7598 22.9116 19.4189 22.7407 19.8584C22.5161 20.4395 22.2427 20.8594 21.8081 21.2939C21.3687 21.7334 20.9536 22.002 20.3726 22.2266C19.9331 22.3975 19.269 22.6025 18.0532 22.6563C16.7349 22.7148 16.3394 22.7295 13.0044 22.7295C9.66455 22.7295 9.26904 22.7148 7.95557 22.6563C6.73486 22.6025 6.07568 22.3975 5.63623 22.2266C5.05518 22.002 4.63525 21.7285 4.20068 21.2939C3.76123 20.8545 3.49268 20.4395 3.26807 19.8584C3.09717 19.4189 2.89209 18.7549 2.83838 17.5391C2.77979 16.2207 2.76514 15.8252 2.76514 12.4902C2.76514 9.15039 2.77979 8.75488 2.83838 7.44141C2.89209 6.2207 3.09717 5.56152 3.26807 5.12207C3.49268 4.54102 3.76611 4.12109 4.20068 3.68652C4.64014 3.24707 5.05518 2.97852 5.63623 2.75391C6.07568 2.58301 6.73975 2.37793 7.95557 2.32422C9.26904 2.26562 9.66455 2.25098 13.0044 2.25098ZM13.0044 0C9.61084 0 9.18604 0.0146484 7.85303 0.0732422C6.5249 0.131836 5.61182 0.34668 4.8208 0.654297C3.99561 0.976562 3.29736 1.40137 2.604 2.09961C1.90576 2.79297 1.48096 3.49121 1.15869 4.31152C0.851074 5.10742 0.63623 6.01562 0.577637 7.34375C0.519043 8.68164 0.504395 9.10645 0.504395 12.5C0.504395 15.8936 0.519043 16.3184 0.577637 17.6514C0.63623 18.9795 0.851074 19.8926 1.15869 20.6836C1.48096 21.5088 1.90576 22.207 2.604 22.9004C3.29736 23.5938 3.99561 24.0234 4.81592 24.3408C5.61182 24.6484 6.52002 24.8633 7.84814 24.9219C9.18115 24.9805 9.60596 24.9951 12.9995 24.9951C16.3931 24.9951 16.8179 24.9805 18.1509 24.9219C19.479 24.8633 20.3921 24.6484 21.1831 24.3408C22.0034 24.0234 22.7017 23.5938 23.395 22.9004C24.0884 22.207 24.5181 21.5088 24.8354 20.6885C25.1431 19.8926 25.3579 18.9844 25.4165 17.6563C25.4751 16.3232 25.4897 15.8984 25.4897 12.5049C25.4897 9.11133 25.4751 8.68652 25.4165 7.35352C25.3579 6.02539 25.1431 5.11231 24.8354 4.32129C24.5278 3.49121 24.103 2.79297 23.4048 2.09961C22.7114 1.40625 22.0132 0.976563 21.1929 0.65918C20.397 0.351562 19.4888 0.136719 18.1606 0.078125C16.8228 0.0146484 16.398 0 13.0044 0Z" fill="#9D9D9D"/>
+                          <path d="M13.0044 6.0791C9.45947 6.0791 6.5835 8.95508 6.5835 12.5C6.5835 16.0449 9.45947 18.9209 13.0044 18.9209C16.5493 18.9209 19.4253 16.0449 19.4253 12.5C19.4253 8.95508 16.5493 6.0791 13.0044 6.0791ZM13.0044 16.665C10.7046 16.665 8.83936 14.7998 8.83936 12.5C8.83936 10.2002 10.7046 8.33496 13.0044 8.33496C15.3042 8.33496 17.1694 10.2002 17.1694 12.5C17.1694 14.7998 15.3042 16.665 13.0044 16.665Z" fill="#9D9D9D"/>
+                          <path d="M21.1782 5.8252C21.1782 6.65528 20.5044 7.32422 19.6792 7.32422C18.8491 7.32422 18.1802 6.65039 18.1802 5.8252C18.1802 4.99512 18.854 4.32617 19.6792 4.32617C20.5044 4.32617 21.1782 5 21.1782 5.8252Z" fill="#9D9D9D"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_375_524">
+                          <rect width="25" height="25" fill="white" transform="translate(0.504395)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                          </a></li>
+                      <li><a href=""><svg width="20" height="20" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M18.0384 0H13.8252V17.029C13.8252 19.058 12.2048 20.7247 10.1882 20.7247C8.17157 20.7247 6.55111 19.058 6.55111 17.029C6.55111 15.0362 8.13557 13.4058 10.0802 13.3333V9.05799C5.79489 9.13042 2.33789 12.6449 2.33789 17.029C2.33789 21.4493 5.86691 25 10.2242 25C14.5814 25 18.1104 21.4131 18.1104 17.029V8.29708C19.6949 9.45653 21.6394 10.1449 23.6921 10.1812V5.9058C20.5232 5.7971 18.0384 3.1884 18.0384 0Z" fill="#9D9D9D"/>
+                          </svg>
+                          </a></li>
+                      <li><a href=""><svg width="20" height="20" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_375_526)">
+                          <path d="M12.0044 0C5.37627 0 0.00439453 5.5957 0.00439453 12.5C0.00439453 17.7979 3.16846 22.3193 7.63096 24.1406C7.52783 23.1494 7.42939 21.6357 7.67314 20.5566C7.89346 19.5801 9.0794 14.3457 9.0794 14.3457C9.0794 14.3457 8.71846 13.5986 8.71846 12.4902C8.71846 10.752 9.68408 9.45312 10.8888 9.45312C11.9106 9.45312 12.4075 10.2539 12.4075 11.2158C12.4075 12.29 11.7513 13.8916 11.4138 15.376C11.1325 16.6211 12.0138 17.6367 13.1903 17.6367C15.3231 17.6367 16.9638 15.293 16.9638 11.9141C16.9638 8.9209 14.9013 6.82617 11.9528 6.82617C8.54033 6.82617 6.53408 9.49219 6.53408 12.251C6.53408 13.3252 6.93252 14.4775 7.42939 15.1025C7.52783 15.2246 7.54189 15.3369 7.51377 15.459C7.42471 15.8545 7.21846 16.7041 7.18096 16.875C7.1294 17.1045 7.00752 17.1533 6.77783 17.041C5.27783 16.3135 4.34033 14.0332 4.34033 12.1973C4.34033 8.25195 7.0919 4.63379 12.2669 4.63379C16.4294 4.63379 19.6638 7.72461 19.6638 11.8555C19.6638 16.1621 17.0575 19.6289 13.4388 19.6289C12.2247 19.6289 11.081 18.9697 10.6872 18.1934C10.6872 18.1934 10.0872 20.5811 9.94189 21.167C9.67002 22.251 8.93877 23.6133 8.45127 24.4434C9.57627 24.8047 10.7669 25 12.0044 25C18.6325 25 24.0044 19.4043 24.0044 12.5C24.0044 5.5957 18.6325 0 12.0044 0Z" fill="#9D9D9D"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_375_526">
+                          <rect width="24" height="25" fill="white" transform="translate(0.00439453)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                          </a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </footer> -->
+
 </body>
 </html>
