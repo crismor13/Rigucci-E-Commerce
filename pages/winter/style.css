@@ -95,6 +95,29 @@ select option {
     /* border: 3px solid greenyellow; */
 }
 
+.winter-hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.winter-hero p {
+    margin-left: 1.8vw;
+}
+
+.winter-hero p span {
+    margin-bottom: 4.6vw;
+}
+
+.hero__img {
+    /* width: 42.22vw; */
+}
+
+/* .hero__img img {
+    width: 100%;
+} */
+
 .hero__title-btn {
     position: absolute;
     left: 13.06vw;
@@ -134,10 +157,7 @@ select option {
     margin-top: 24px;
 }
 
-.hero__img {
-    /* border: 2px solid blue; */
-    vertical-align: top;
-}
+
 
 
 .hero__btn:hover {
@@ -193,27 +213,17 @@ main h1 {
 }
 
 .clothes-wrapper {
-    padding: 0;
-    border: 2px solid blue;
-    width: 100%;
     margin-top: 7vw;
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: auto auto auto;
 }
 
-/* .clothes-wrapper .row{
-    text-align: center;
+.clothes-wrapper .row{
     display: flex;
     justify-content: space-between;
-    margin: 3.47vw auto;
-    flex-wrap: wrap;
-} */
+    margin: 3.47vw 0;
+}
 
-.product-card {
-    width: clamp(190px, 22.22vw, 320px);
-    
-    
+.row .product-card {
+    width: 22.22vw;
 }
 
 .product-card img {
@@ -632,16 +642,9 @@ background-color: #243127;
     .item--tablet-in-3 {
         width: 30%;
     }
-    .clothes-wrapper .row{
-        text-align: center;
-        display: block;
-        justify-content: space-between;
-        margin: 3.47vw auto;
-        flex-wrap: wrap;
-    }
 }
   
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 650px) {
     .track {
         padding-left: 0;
         padding-right: 0;
@@ -657,11 +660,6 @@ background-color: #243127;
 
     .item--mobile-in-3 {
         width: 30%;
-    }
-    .clothes-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 }
 
@@ -746,12 +744,7 @@ footer hr {
 
 /* mobile version =====================================================*/
 
-@media screen and (max-width: 777px) {
-
-    .clothes-wrapper {
-        
-        grid-template-columns: auto auto ;
-    }
+@media screen and (max-width: 768px) {
  
     
     header {
@@ -948,26 +941,6 @@ footer hr {
         transition: opacity ease 250ms;
     }
 
-    /* footer-responsive */
-
-    .footer__container {
-        flex-wrap: wrap;
-    }
-    
-    .copyright {
-        display: block;
-        text-align: center;
-    }
-
-    .social-media-icons {
-        width: 80%;
-        margin: 20px auto;
-    }
-
-    .copyright span {
-        display: block;
-        margin: 25px;
-    }
 
 
 }
