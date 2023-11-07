@@ -652,7 +652,7 @@ footer hr {
 
 /* mobile version =====================================================*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 777px) {
  
     
     header {
@@ -842,6 +842,27 @@ footer hr {
         background-color: rgb(209, 209, 209);
         opacity: 0.75;
         transition: opacity ease 250ms;
+    }
+
+    /* footer-responsive */
+
+    .footer__container {
+        flex-wrap: wrap;
+    }
+    
+    .copyright {
+        display: block;
+        text-align: center;
+    }
+
+    .social-media-icons {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .copyright span {
+        display: block;
+        margin: 25px;
     }
 
 

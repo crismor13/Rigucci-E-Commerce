@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    font-family: 'Roboto';
+}
+
 :root {
     --white: rgb(224, 227, 228);
 }
@@ -12,10 +17,10 @@
     font-size: clamp(16px, 1.66vw, 24px);
 }
 
-body {
-    margin: 0;
-    font-family: 'Roboto';
-}
+/* .logo  a:visited,  a:link, a:hover, a:active {
+    text-decoration: none;
+    color: var(--white);
+} */
 
 header {
     padding: 0 12.84vw;
@@ -34,7 +39,6 @@ header {
     /* font-size: 1.66vw; */
     font-size: clamp(16px, 1.66vw, 24px);
 }
-
 
 .logo  a:visited,  a:link, a:hover, a:active {
     text-decoration: none;
@@ -189,21 +193,47 @@ main h1 {
 }
 
 .clothes-wrapper {
+    padding: 0;
+    border: 2px solid blue;
+    width: 100%;
     margin-top: 7vw;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto;
 }
 
-.clothes-wrapper .row{
+/* .clothes-wrapper .row{
+    text-align: center;
     display: flex;
     justify-content: space-between;
-    margin: 3.47vw 0;
-}
+    margin: 3.47vw auto;
+    flex-wrap: wrap;
+} */
 
-.row .product-card {
-    width: 22.22vw;
+.product-card {
+    width: clamp(190px, 22.22vw, 320px);
+    
+    
 }
 
 .product-card img {
     width: 100%;
+}
+
+.product-card p {
+    color: #202020;
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 14px;
+
+    margin-top: 0;
+    margin-bottom: 1.3vw;
+    
+}
+
+.product-card p span {
+    font-family: 'Darker Grotesque';
+    font-size: 18px;
 }
 
 /* .main-menu p {
@@ -618,9 +648,16 @@ background-color: #243127;
     .item--tablet-in-3 {
         width: 30%;
     }
+    .clothes-wrapper .row{
+        text-align: center;
+        display: block;
+        justify-content: space-between;
+        margin: 3.47vw auto;
+        flex-wrap: wrap;
+    }
 }
   
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 420px) {
     .track {
         padding-left: 0;
         padding-right: 0;
@@ -636,6 +673,11 @@ background-color: #243127;
 
     .item--mobile-in-3 {
         width: 30%;
+    }
+    .clothes-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -720,7 +762,12 @@ footer hr {
 
 /* mobile version =====================================================*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 777px) {
+
+    .clothes-wrapper {
+        
+        grid-template-columns: auto auto ;
+    }
  
     
     header {
@@ -917,6 +964,26 @@ footer hr {
         transition: opacity ease 250ms;
     }
 
+    /* footer-responsive */
+
+    .footer__container {
+        flex-wrap: wrap;
+    }
+    
+    .copyright {
+        display: block;
+        text-align: center;
+    }
+
+    .social-media-icons {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .copyright span {
+        display: block;
+        margin: 25px;
+    }
 
 
 }

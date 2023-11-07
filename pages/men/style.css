@@ -567,6 +567,22 @@ margin: 0 auto;
     font-size: 18px;
 }
 
+.product-card p {
+    color: #202020;
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 14px;
+
+    margin-top: 0;
+    margin-bottom: 1.3vw;
+    
+}
+
+.product-card p span {
+    font-family: 'Darker Grotesque';
+    font-size: 18px;
+}
+
 /* .item:nth-child(1) .demo-content {
 background-color: #216485;
 }
